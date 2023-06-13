@@ -1,0 +1,495 @@
+  /* @font-face {
+  font-family:  'helo world';
+  src: url('./CherryBombOne-Regular.ttf');
+} */
+
+:root {
+  --primary-color: rgb(203, 0, 214);
+  --second-color: rgb(244, 24, 8);
+  --btn-color: rgb(255, 119, 0);
+}
+
+
+/* Height & Width */
+/* .div1{
+  border: 2px solid black;
+  overflow: scroll;
+  height: 400px;
+  width: 400px;
+} */
+
+/*
+TEXT
+color, text-align="center, left, right",  direction='rtl',  text-decoration='underline, linetrough'
+text-transform='uppercase, lowercase, capitalize'  line-height='px'  text-indent='px'  letter-spacing='px'
+word-spacing= '10px'  white-space= 'pre,'  word-wrap: 'nowrap, word-break'  text-shadow''5px 20px 4px color'
+writing-mode='vertical-lr/rl' 
+*/
+
+/* .ptag{
+  padding: 20px;
+  border: 1px red solid;
+  color: rgb(0, 226, 8);  
+}
+
+h1{
+  writing-mode: vertical-rl;  
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 20px #f70000;
+} */
+
+/* 
+LINKS
+link
+visited
+hover
+active
+
+text-decoration='none' link visite upon hover and active down
+*/
+
+/* a{
+  font-size: 50px;
+  text-decoration: none;
+} */
+
+/* a:link{
+  color: aqua;
+}
+
+a:visited{
+  color: green;
+}
+
+a:hover{
+  color: red;
+}
+
+a:active{
+  color: blue;
+} */
+
+
+/* 
+FONTS
+font-weight, font-size ,"two type link and download file" @font-face{font-family:'name as your wish', src:url(''), font-varient=samll-caps, 
+}
+*/
+
+
+/* 
+CSS UNITS
+absolute : cm, mm, inch, px (1Inch =96px), pt(1Inch = 72pt) ,pc(1px = 12pt)
+
+relative :
+ em- em is relative to the size of its direct parent /multiplies to parents fonts
+ rem- rem is only relative to root (html  tag) size
+ vh- 1% of view port height
+ vw- view port of width
+ % - relative to parent
+*/
+
+/* html{
+  font-size: 10px;
+}
+
+.parent{
+  font-size: 60px;
+}
+
+.child{
+  font-size: 1rem;
+} */
+
+
+/* cursor 
+  cursor='auto, all-scroll, cell, col-resize, pointer, crosshair, e-resize, grab, help, progress, wait,'
+*/
+
+
+/* !important give first priority */
+
+/* .demo{
+  background-color: red !important;
+} */
+
+
+/* 
+box shadow 
+box-shadow=1px 3px 3px 10px red
+box-shadow=1px 3px 3px 10px red inset
+box-shadow=1px 3px 3px 10px red,
+*/
+
+
+/* .box{
+  background-color: rgb(255, 255, 255);
+  height: 200px;
+  width: 200px;
+  box-shadow: 1px 1px 10px gray;
+  border-radius: 10px;
+} */
+
+/*
+ opacity=0-1
+*/
+
+/* filter
+filter='blur(10px), brightness(34%), contrast(45%), dropshadow(8px 3px 3px red), grayscale(33%), hue-rotate(44deg), invert(58%)'
+*/
+
+/* 
+
+two type gradient  linear/radial
+background-image= linear-gradient(red, green)
+linear-gradient(to right, red, green)
+linear-gradient(to left, red, green)
+linear-gradient(30deg, red, green, yellow)
+radial-gradient(red green, yellow)
+radial-gradient(circle red, green, yellow)
+radial-gradient(circle red10%, green, yellow)
+*/
+
+/* overflow
+overflow= visible, hidden, scroll, overflow-x: hidden, overflow-y:scroll, auto
+*/
+
+/* Resize => use on block element , if element is overflow auto or x-y
+resize = both, horizontal, vertical, => this is use on div resize if it's overlowing content
+*/
+
+/* list 
+list-style-type= none, disc, square, circle 
+
+ol = lower-alpha, upper-alpha, lower-roman, decimal, decimal-landing-zero
+
+  list-style-image: url('');
+
+  list-style-position: inside/ outside
+*/
+
+
+/* Table
+border-collapse:collapse
+border-spacing:38px
+caption-side:bottom
+empty-cell: hide
+*/
+
+/* table{
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-spacing: 20px;
+  empty-cells: hide;
+} */
+
+
+/* caption{
+  border: 1px solid black;
+}
+
+tr{
+  border: 1px solid black;
+}
+
+th{
+  border: 1px solid black;
+}
+
+td{
+  border: 1px solid black;
+}  */
+
+
+/* calc(100% - 200pxs)  add space in 100% of width. with fix size*/
+
+/* .fun{
+  background-color: aqua;
+  height: 100px;
+  width: 70%;
+  width: calc(100% - 200px);
+} */
+
+
+/* variable color => var(--colorname);
+:root{ --primary-color: red; --btn-color:green;}
+*/
+
+
+/* Box sizing 
+  box-sizing: content-box;  => by default content-box padding and border applies on content, it's height, width assign container
+  border-box => including heigh width border size and padding, it's stop increase container size
+  */
+
+/* #div1{
+  background-color: teal;
+  width: 600px;
+  height: 200px;
+  padding: 20px;
+}
+
+#div2{
+  background-color: rgb(150, 223, 223);
+  width: 600px;
+  height: 200px;
+  padding: 50px;
+  border: 10px solid black;
+  box-sizing: border-box;
+
+} */
+
+/* initial or inherit
+initial => is take bydefault take color of element
+inherit => is take color of it's parent
+color: initial;
+*/
+
+/* #div1{
+  background-color: skyblue;
+  width:300px;
+  height: 200px;
+  color:red;;
+}
+
+#div2{
+  background-color: aqua;
+  width:300px;
+  height: 300px;
+  color: inherit;
+} */
+
+/* pseudo class => use for give style to child with out selectors
+li:first-child{color: red} => this is for give to first child
+li:last-child => for last child
+li:nth-child(4)
+li:nth-child(odd)
+li:nth-child(even)
+li:nth-child(3n + 0) => for make pattern after 3line highligh give property
+li:nth-last-child(2) => for give propert last to second child
+
+focus => input:focus{ border 2px solid}
+*/
+
+/* li:nth-last-child(2){
+  color:red
+} */
+
+/* object fit property 
+  it can be use one image or videos, it's like background size and position
+  object-fit: content, fill, cover;
+  object-position: top center;
+  object-position: top left; this property applies when you give object-position
+*/
+
+/* .fitbox{
+    border: black solid 2px;
+    height: 500px;
+    width: 400px;
+  }
+
+img{
+  width: 300px;
+  height: 200px;
+   object-fit: fill;
+} */
+
+/* pseudo-element
+pseudo class and pseudo element different is colon and double colon
+
+p::first-letter{font-size: 10px; color: red;}
+p::first-line{font-size: 10px; color: red;}
+
+enter content with css dynamically
+
+h1::before{content: url(imgaepath) }  => to insert content with before text
+
+h1::after{content: 'helo ther after text added'}  => to insert add content after text
+
+::selection{ => This is for text select and start double colon use for universal selector
+  color: red;
+  background: yellow;
+}
+*/
+
+/* h1::after{
+  content: url(./arrow.png);
+}
+
+::selection{
+  color: rgb(17, 0, 255);
+  background-color: rgb(255, 0, 0);
+} */
+
+/* display propert
+block => take full width // div,p,h1,form //newline start, fullwidth, apply heigh&width 
+inline => take width only on use // a,img,span//not start newline, take only content width
+inline-block
+
+display:block; => it's take height and width
+display: inline-block => it's behave like inline and when give height and width it's behave like block
+display: none; => it's remove element
+
+visibility: hidden => it's only hide element but exitst
+*/
+
+
+/* .demo1 {
+  background-color: aqua;
+  height: 100px;
+  width: 100px;
+  display: none;
+  visibility: hidden;
+}
+
+.demo2 {
+  background-color: rgb(0, 255, 0);
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+.demo3 {
+  background-color: rgb(240, 240, 0);
+  height: 100px;
+  width: 100px;
+  display: inline;
+} */
+
+/*
+postition: 
+
+static => default all elements are statics
+relative => it's moves form current position with top/bottom/left/right && also occupy there space 
+fixed => it's fix element of view port .when other scroll but fix postion will not scroll it's fixed 
+absolute => it's react with it's parent. it's dont occupie space, other div come them space
+
+it's propertly apply when element is positioned. if you give postiontion proprty exept static then its call positioned
+if element is not positioned then is goes it's parent
+
+z-index : it's worked when you give element any position property exept static, z-index is element take upper side fo all of theme
+          you giv more zindex it's come more up all of them
+*/
+
+
+
+/* float => this is move element for left or right
+  float: left, right;
+
+  => when you use float if it's come out of container then use overflow: auto , it's happen more times
+
+  example with paragraph
+  example with navbar
+  ul{
+    background-color: yellow;
+    list-style-type: none;
+    overflow: auto;
+  }
+
+  li{
+     color: white;
+     padding: 30px
+     float: left;
+  }
+
+clear => both image will not stay side by side clear right once go down => it can be use on floated or normal => it's just declare that element can stay right or left 
+  both element float left and but if you want to one by one down than use clear
+clear -> is ability to tell div you will not stay right of flaoted div other wise left if both side not allow than user (clear: both)
+
+img{
+    float: right;
+    clear: right; 
+    clear: both;
+*/
+
+
+/* #img1{
+  float: left;
+  padding: 10px;
+}
+
+#img2{
+  float: left;
+  padding: 10px;  
+} */
+
+
+
+/* 
+css 2D Transforms => it can be use on block or inline-block 
+transform: translate(50px, 50px)
+transform: rotate(10deg) also it can be in minus
+transform: scale(2, 3) it multiply size of element
+transform: scale(2) you can give only one
+transform: skew(3deg, 2deg)
+transform: skewY(3deg)
+display: inline-block;
+*/
+
+/* .demo{
+  background-color: aqua;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  margin-top: 50px;
+ 
+}
+
+.demo:hover{
+  transform: skewY(15deg)
+} */
+
+/* 
+  transition => to make every fast moment to make smooth transition
+  make it on hover  
+
+  transition-property: width;  => declare wich property you want to change on hover
+  transition-duration: 1s; => take how many time to change it
+  transition-property: width, backgroudn-color; => to multiple property
+  transition-property: all => apply for all propety
+  transition-delay: 1s => start transition after give second or ml 
+  shotform
+  transition: width 2s, height 3s;
+*/
+
+/* Animation 
+@keyframes => when what will happen
+animation-delay: 2s;  => this is start animation after sometime;
+animation-iteration-count: 3; => it's loop animation 3 time loop the animation
+animation-iteration-count: infinite; => it's loop animation loops never stop
+animation-direction: reverse; => it's reverse the animation
+*/
+
+@keyframes changecolor{
+  from { /*what happend when it's start  this is (0) second*/
+    background-color: green;
+   } 
+  to { /*what happend when it's end, this is (2) second */
+    background-color: yellow;
+  } 
+}
+
+@keyframes secondchange{
+  0%{background-color: blue;}
+  25%{background-color: green;}
+  50%{width: 600px;}
+  75%{background-color: tomato;}
+  100%{background-color: teal;}
+}
+
+.second{
+  height: 200px;
+  width: 200px;
+  background-color: magenta;
+  animation-name: secondchange;
+  animation-duration: 5s;
+  animation-iteration-count: 3;
+}
+
+.animate{
+  background-color: red; 
+  height: 100px;
+  width: 200px;
+  animation-name: changecolor;
+  animation-duration: 3s;
+}
