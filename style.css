@@ -493,3 +493,70 @@ animation-direction: reverse; => it's reverse the animation
   animation-name: changecolor;
   animation-duration: 3s;
 }
+
+
+/* Media query */
+
+/* You can also use min it will apply after min with  */
+/* you can also use both  */
+/* @media screen and (min-width: 768px) and (max-width: 768px) 
+    in this media query apply between those pixel,,min upto and max bottom to
+*/
+@media screen and (max-width: 768px) {
+    
+    /* proper given in this query it will not apply after max width given */
+    /* You can give many query like this  */
+
+    .div1{
+        width: 100%;
+    }
+
+    .div2{
+        width: 100%
+    }
+}
+
+
+/*Make video and image responsive   */
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+video{
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Libraries
+Bootstrap > heavy > but give more funcitonalities > most popular
+skeleton css > light > only use for responsive web
+pure.css > light
+foundation 
+*/
+
+
+/* Advance Selector
+tagname{
+
+}
+
+id{}
+
+class{}
+
+p::first-line{pseudo element}
+
+a[href="http://example.com"]
+
+*{universal selector applies on all selector}
+
+
+
+    COMBINATOR SELECTOR
+
+    .red-p span { color: green } descendant combinator (child at any stage) 
+    
+
+*/
